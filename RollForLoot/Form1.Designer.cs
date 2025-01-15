@@ -46,6 +46,7 @@
             this.buttonSaveLoot = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonCleanLogs = new System.Windows.Forms.Button();
+            this.textBoxFilePath = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTimes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRoll)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -228,12 +229,22 @@
             this.buttonCleanLogs.Visible = false;
             this.buttonCleanLogs.Click += new System.EventHandler(this.buttonCleanLogs_Click);
             // 
+            // textBoxFilePath
+            // 
+            this.textBoxFilePath.Location = new System.Drawing.Point(617, 98);
+            this.textBoxFilePath.Name = "textBoxFilePath";
+            this.textBoxFilePath.ReadOnly = true;
+            this.textBoxFilePath.Size = new System.Drawing.Size(230, 27);
+            this.textBoxFilePath.TabIndex = 28;
+            this.textBoxFilePath.Visible = false;
+            // 
             // FormMainMneu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(1067, 658);
+            this.Controls.Add(this.textBoxFilePath);
             this.Controls.Add(this.buttonCleanLogs);
             this.Controls.Add(this.buttonSaveLoot);
             this.Controls.Add(this.comboBoxDatabase);
@@ -283,6 +294,7 @@
         private System.Windows.Forms.Button buttonSaveLoot;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonCleanLogs;
+        private System.Windows.Forms.TextBox textBoxFilePath;
     }
 }
 

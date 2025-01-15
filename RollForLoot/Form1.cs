@@ -102,6 +102,32 @@ namespace RollForLoot
 
         }
 
+        public void LoadDataCustomFile()
+        {
+            DataTable tableCustomData = new DataTable();
+
+            tableCustomData.Columns.Add("Column1", typeof(string));
+            tableCustomData.Columns.Add("Roll to Reach", typeof(int));
+            dataGridView1.DataSource = tableCustomData;
+
+            string[] lines = File.ReadAllLines(textBoxFilePath.Text);
+            string[] values;
+
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                values = lines[i].ToString().Split(',');
+                string[] row = new string[values.Length];
+
+                for (int j = 0; j < values.Length; j++)
+                {
+                    row[j] = values[j].Trim();
+                }
+
+                tableCustomData.Rows.Add(row);
+            }
+        }
+
         private void buttonGiveLoot_Click(object sender, EventArgs e)
         {
 
@@ -122,6 +148,23 @@ namespace RollForLoot
                 int timesRolled = ((int)numericUpDownTimes.Value);
                 int playerRoll = ((int)numericUpDownRoll.Value);
                 FillListBox(@"files/RollForCurrency.txt", timesRolled, playerRoll);
+                
+            }
+
+            if(comboBoxMode.SelectedIndex == 2) {
+                OpenFileDialog chosenFile = new OpenFileDialog();
+
+                if(chosenFile.ShowDialog() == DialogResult.OK)
+                {
+                    chosenFile.Filter = "Text files (*.txt)|*.txt";
+                    textBoxFilePath.Text = chosenFile.FileName;
+                    LoadDataCustomFile();
+                    int timesRolled = ((int)numericUpDownTimes.Value);
+                    int playerRoll = ((int)numericUpDownRoll.Value);
+                    FillListBox(textBoxFilePath.Text, timesRolled, playerRoll);
+
+                }
+
                 
             }
         }
