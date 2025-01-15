@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollForLoot", "RollForLoot\RollForLoot.csproj", "{DE1861EA-654A-4AB9-A408-12DB2FD6A59F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE1861EA-654A-4AB9-A408-12DB2FD6A59F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE1861EA-654A-4AB9-A408-12DB2FD6A59F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE1861EA-654A-4AB9-A408-12DB2FD6A59F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE1861EA-654A-4AB9-A408-12DB2FD6A59F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2AF21A4-E5EE-4972-9BDA-3E2CA2D6A680}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,61 @@
+﻿Thrash,2
+Chew Gum,3
+Rotten Food,4
+Broken Weapon,5
+Broken Armor,6
+Random Stupid Shit,7
+Food,8
+Crossbow Bolts,9
+Dagger,10
+Arrows,11
+Revolver Bullets,12
+Revolver,13
+Repeater Bullets,14
+Shortsword,15
+Repeater Rifle,16
+Random Item from Enemy,17
+Random Item from Enemy,18
+Random Bonus Item,19
+Random Bonus Item,20
+Hunting Rifle,21
+Hunting Rifle Bullets,22
+Light Shotgun,23
+Homebrew Weapon,24
+Heavy Shotgun,25
+Enchanted Weapon,26
++1 Weapon,27
++2 Weapon,28
++3 Weapon,29
++4 Weapon,30
+Level 1 Spell Scroll,10
++1 Armor,11
+Level 2 Spell Scroll,12
++2 Armor,13
+Tomahawks,14
+Shortbow,15
+Level 3 Spell Scroll,16
+Longbow,17
+Revolver,18
+Sidearm Pistol,19
+Level 4 Spell Scroll,20
+Light Crossbow,14
+Revolver,15
+Repeater Rifle,16
+Sniper Rifle,20
+Light Shotgun,16
+Heavy Shotgun,18
+Poison Damage,1
+Acid Damage,1
+Leather Armor,14
+Padded Leather Armor,15
+Chain Mail,16
+Full Plate Armor,20
+Pistol Bullets,15
+Cantrip Spell Scroll,12
+Homebrew Spell Scroll,20
+Homebrew Weapon,18
+Homebrew Armor,18
+Homebrew Item,16
+Male Underwear,6
+Female Underwear,6
+Piece of Clothing,8

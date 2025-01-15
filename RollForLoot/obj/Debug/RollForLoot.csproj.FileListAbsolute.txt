@@ -1,0 +1,10 @@
+C:\Users\alexm\Documents\Projects\RollForLoot\RollForLoot\RollForLoot\bin\Debug\RollForLoot.exe.config
+C:\Users\alexm\Documents\Projects\RollForLoot\RollForLoot\RollForLoot\bin\Debug\RollForLoot.exe
+C:\Users\alexm\Documents\Projects\RollForLoot\RollForLoot\RollForLoot\bin\Debug\RollForLoot.pdb
+C:\Users\alexm\Documents\Projects\RollForLoot\RollForLoot\RollForLoot\obj\Debug\RollForLoot.csproj.AssemblyReference.cache
+C:\Users\alexm\Documents\Projects\RollForLoot\RollForLoot\RollForLoot\obj\Debug\RollForLoot.FormMainMneu.resources
+C:\Users\alexm\Documents\Projects\RollForLoot\RollForLoot\RollForLoot\obj\Debug\RollForLoot.Properties.Resources.resources
+C:\Users\alexm\Documents\Projects\RollForLoot\RollForLoot\RollForLoot\obj\Debug\RollForLoot.csproj.GenerateResource.cache
+C:\Users\alexm\Documents\Projects\RollForLoot\RollForLoot\RollForLoot\obj\Debug\RollForLoot.csproj.CoreCompileInputs.cache
+C:\Users\alexm\Documents\Projects\RollForLoot\RollForLoot\RollForLoot\obj\Debug\RollForLoot.exe
+C:\Users\alexm\Documents\Projects\RollForLoot\RollForLoot\RollForLoot\obj\Debug\RollForLoot.pdb
