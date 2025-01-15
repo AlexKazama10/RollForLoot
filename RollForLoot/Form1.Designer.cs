@@ -32,7 +32,6 @@
             this.buttonStart = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.buttonOpenDatabase = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1CharacterName = new System.Windows.Forms.Label();
             this.labelTimes = new System.Windows.Forms.Label();
             this.labelRoll = new System.Windows.Forms.Label();
@@ -45,9 +44,11 @@
             this.numericUpDownRoll = new System.Windows.Forms.NumericUpDown();
             this.comboBoxDatabase = new System.Windows.Forms.ComboBox();
             this.buttonSaveLoot = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonCleanLogs = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTimes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRoll)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonStart
@@ -72,22 +73,13 @@
             // 
             // buttonOpenDatabase
             // 
-            this.buttonOpenDatabase.Location = new System.Drawing.Point(43, 142);
+            this.buttonOpenDatabase.Location = new System.Drawing.Point(43, 127);
             this.buttonOpenDatabase.Name = "buttonOpenDatabase";
             this.buttonOpenDatabase.Size = new System.Drawing.Size(168, 38);
             this.buttonOpenDatabase.TabIndex = 6;
             this.buttonOpenDatabase.Text = "Open Database";
             this.buttonOpenDatabase.UseVisualStyleBackColor = true;
             this.buttonOpenDatabase.Click += new System.EventHandler(this.buttonOpenDatabase_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(43, 293);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(168, 328);
-            this.dataGridView1.TabIndex = 7;
-            this.dataGridView1.Visible = false;
             // 
             // label1CharacterName
             // 
@@ -200,7 +192,7 @@
             "Items",
             "Currency",
             "Other database"});
-            this.comboBoxDatabase.Location = new System.Drawing.Point(43, 186);
+            this.comboBoxDatabase.Location = new System.Drawing.Point(43, 171);
             this.comboBoxDatabase.Name = "comboBoxDatabase";
             this.comboBoxDatabase.Size = new System.Drawing.Size(168, 27);
             this.comboBoxDatabase.TabIndex = 25;
@@ -209,12 +201,32 @@
             // 
             this.buttonSaveLoot.Location = new System.Drawing.Point(566, 339);
             this.buttonSaveLoot.Name = "buttonSaveLoot";
-            this.buttonSaveLoot.Size = new System.Drawing.Size(168, 38);
+            this.buttonSaveLoot.Size = new System.Drawing.Size(88, 38);
             this.buttonSaveLoot.TabIndex = 26;
             this.buttonSaveLoot.Text = "Save";
             this.buttonSaveLoot.UseVisualStyleBackColor = true;
             this.buttonSaveLoot.Visible = false;
             this.buttonSaveLoot.Click += new System.EventHandler(this.buttonSaveLoot_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 609);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(39, 37);
+            this.dataGridView1.TabIndex = 7;
+            this.dataGridView1.Visible = false;
+            // 
+            // buttonCleanLogs
+            // 
+            this.buttonCleanLogs.Location = new System.Drawing.Point(660, 339);
+            this.buttonCleanLogs.Name = "buttonCleanLogs";
+            this.buttonCleanLogs.Size = new System.Drawing.Size(88, 38);
+            this.buttonCleanLogs.TabIndex = 27;
+            this.buttonCleanLogs.Text = "Clean logs";
+            this.buttonCleanLogs.UseVisualStyleBackColor = true;
+            this.buttonCleanLogs.Visible = false;
+            this.buttonCleanLogs.Click += new System.EventHandler(this.buttonCleanLogs_Click);
             // 
             // FormMainMneu
             // 
@@ -222,6 +234,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(1067, 658);
+            this.Controls.Add(this.buttonCleanLogs);
             this.Controls.Add(this.buttonSaveLoot);
             this.Controls.Add(this.comboBoxDatabase);
             this.Controls.Add(this.numericUpDownRoll);
@@ -243,9 +256,9 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMainMneu";
             this.Text = "Main Menu";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTimes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRoll)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,7 +269,6 @@
         private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Button buttonOpenDatabase;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1CharacterName;
         private System.Windows.Forms.Label labelTimes;
         private System.Windows.Forms.Label labelRoll;
@@ -269,6 +281,8 @@
         private System.Windows.Forms.NumericUpDown numericUpDownRoll;
         private System.Windows.Forms.ComboBox comboBoxDatabase;
         private System.Windows.Forms.Button buttonSaveLoot;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button buttonCleanLogs;
     }
 }
 

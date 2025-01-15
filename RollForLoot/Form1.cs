@@ -1,4 +1,5 @@
-﻿using System;
+﻿using J3QQ4;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,7 +37,7 @@ namespace RollForLoot
             labelMode.Visible = true;
             listBoxLoot.Visible = true;
             buttonSaveLoot.Visible = true;
-
+            buttonCleanLogs.Visible = true;
 
 
         }
@@ -216,6 +217,29 @@ namespace RollForLoot
 
                 //nothing
             }
+        }
+
+        private void buttonCleanLogs_Click(object sender, EventArgs e)
+        {
+            DirectoryInfo di = new DirectoryInfo(@"../../lootLog/");
+
+            DialogResult dialog = MessageBox.Show("Are you sure you wish to annihilate the logs and send them into the nine hells? " + Emoji.Skull, "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (dialog.Equals(DialogResult.Yes)) {
+                foreach (FileInfo file in di.GetFiles())
+                {
+                    file.Delete();
+                }
+                foreach (DirectoryInfo dir in di.GetDirectories())
+                {
+                    dir.Delete(true);
+                }
+
+
+                MessageBox.Show("All logs have been ripped to pieces by imps " + Emoji.Fire + Emoji.Smiling_Imp);
+
+            }
+
         }
     }
 
