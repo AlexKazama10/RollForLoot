@@ -237,7 +237,7 @@ namespace RollForLoot
         private void buttonSaveLoot_Click(object sender, EventArgs e)
         {
             string dateFormat = DateTime.Now.ToString("HHmm");
-            string path = "../../lootLog/" + textBoxCharacterName.Text + " " + dateFormat + ".txt";
+            string path = "lootLog/" + textBoxCharacterName.Text + " " + dateFormat + ".txt";
             var file = new FileInfo(path);
             file.Directory.Create(); 
             var listBoxText = "";
@@ -252,7 +252,7 @@ namespace RollForLoot
             DialogResult dialogResult = MessageBox.Show(textBoxCharacterName.Text + "'s loot was save, do you wish to open the file?", "Loot saved", MessageBoxButtons.YesNo);
 
             if (dialogResult == DialogResult.Yes) {
-                Process.Start("notepad.exe", @"../../lootLog/" + textBoxCharacterName.Text + " " + dateFormat + ".txt");
+                Process.Start("notepad.exe", @"lootLog/" + textBoxCharacterName.Text + " " + dateFormat + ".txt");
 
             }
 
@@ -264,7 +264,7 @@ namespace RollForLoot
 
         private void buttonCleanLogs_Click(object sender, EventArgs e)
         {
-            DirectoryInfo di = new DirectoryInfo(@"../../lootLog/");
+            DirectoryInfo di = new DirectoryInfo(@"lootLog");
 
             DialogResult dialog = MessageBox.Show("Are you sure you wish to annihilate the logs and send them into the nine hells? " + Emoji.Skull, "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
